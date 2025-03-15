@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .form-container {
+        width: 600px;
+        background-color: #ffffcc;
+        padding: 10px;
+        margin: auto;
+    }
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+       
+    
+    }
+    
+    .form-group div {
+        flex: auto;
+        padding: 5px;
+        border: 1px solid black;
+        
+        
+    }
+    
+    textarea {
+      
+        height: 140px;
+        width:235px;
+        overflow: scroll;
+      
+        
+        
+    }
+    select, input[type="text"] {
+        width: 94%;
+        height: 25px;
+    }
+    .buttons {
+        text-align: center;
+        margin-top: 10px;
+        flex: auto;
+        padding: 8px;
+        border: 1px solid black;
+        
+    
+    }
+    .cmt{
+        float: right;
+       
+          width: 40%;
+        height: 170px;
+        flex: auto;
+        padding: 5px;
+        border: 1px solid black;
+        
+    
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <div class="cmt">Comment:
+                <textarea  name="comments"></textarea> 
+            </div> 
+            <div class="form-group">
+                <div>Name:<input type="text" name="name"></div>
+               
+                
+            </div>
+            <div class="form-group">
+                <div>Email:<input type="text" name="email"></div>
+            </div>
+            <div class="form-group">
+                <div>Department:<br>
+                    <select name="department">
+                        <option>Select Any Value</option>
+                        <option>CSE</option>
+                        <option>EEE</option>
+                        <option>CE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+               
+                <div>
+                    <strong>Gender:</strong>
+                    <input type="radio" name="gender" value="male"> Male 
+             
+                    <input type="radio" name="gender" value="female"> Female 
+                
+                </div>
+                <div>
+
+                    <strong>Favourite Subject:</strong><br>
+                    <input type="checkbox" name="subject" value="F3026"> F3026 <br>
+                    <input type="checkbox" name="subject" value="F3038" checked> F3038 <br>
+                    <input type="checkbox" name="subject" value="F4106"> F4106
+                </div>
+        
+         </div>
+        
+            <div class="buttons">
+                <input type="submit" value="Send Information">
+                <input type="reset" value="Clear All">
+            </div>
+     
+        </form>
+    </div>
+
+</body>
+</html>
